@@ -1,3 +1,19 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/skyline.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  color: white;
+  padding: 150px 0;
+  text-align: center;
+}
+
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 96px;
@@ -5,21 +21,19 @@ h1 {
   font-weight: 700;
   line-height: normal;
   margin: 0;
-  text-align: center;
 }
 
 h2 {
-  text-align: center;
   font-family: Poppins;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 50px;
   margin-top: 20px;
 }
 
 h3 {
-  text-align: center;
   font-family: Poppins;
   font-size: 24px;
   font-style: normal;
@@ -27,4 +41,31 @@ h3 {
   line-height: normal;
   letter-spacing: 5px;
   margin: 0;
+}
+
+.button-light {
+  background-color: white;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 16px 32px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
