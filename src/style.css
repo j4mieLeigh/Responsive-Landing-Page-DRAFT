@@ -3,6 +3,11 @@
   max-width: 1200px;
 }
 
+section {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/skyline.jpg");
@@ -35,12 +40,16 @@ h2 {
 
 h3 {
   font-family: Poppins;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  letter-spacing: 5px;
   margin: 0;
+}
+
+header h3 {
+  font-size: 24px;
+  letter-spacing: 5px;
 }
 
 .button-light {
@@ -56,7 +65,42 @@ h3 {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+ul,
+p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.6),
+      rgba(39, 32, 68, 0.6)
+    ),
+    url("../images/skyline 2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  color: white;
+  padding: 60px;
+}
+
+/* Media Query */
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
