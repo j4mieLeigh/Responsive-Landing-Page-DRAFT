@@ -84,6 +84,11 @@ h5 {
   text-transform: uppercase;
 }
 
+.button-light:hover {
+  transform: scale(1.15);
+  transition: all 200ms ease-in-out;
+}
+
 .grid {
   display: grid;
   grid-gap: 40px;
@@ -111,7 +116,8 @@ h5 {
 }
 
 .intro h2,
-.cards h2 {
+.cards h2,
+.gallery h2 {
   font-size: 24px;
   font-weight: 700;
   margin: 5px 0;
@@ -129,7 +135,8 @@ h5 {
   background-color: #f8f8f8;
 }
 
-.cards img {
+.cards img,
+.gallery img {
   width: 100%;
 }
 
@@ -158,9 +165,25 @@ h5 {
 }
 
 .cards h2,
-.cards h3 {
+.cards h3,
+.gallery h2,
+.gallery h3 {
   margin: 5px 0;
   text-align: center;
+}
+
+.gallery h2,
+.gallery h3 {
+  color: white;
+}
+
+.gallery-grid {
+  margin-top: 45px;
+}
+
+.gallery img:hover {
+  transform: scale(1.15);
+  transition: all 200ms ease-in-out;
 }
 
 .button-dark {
@@ -177,6 +200,15 @@ h5 {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.button-dark:hover {
+  transform: scale(1.15);
+  transition: all 200ms ease-in-out;
+}
+
+.gallery {
+  background-color: #1f2849;
 }
 
 ul,
@@ -208,6 +240,10 @@ footer {
 
 footer h3 {
   opacity: 1;
+}
+
+footer a {
+  color: white;
 }
 
 /* Media Query */
