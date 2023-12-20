@@ -72,6 +72,7 @@ h5 {
 
 .button-light {
   background-color: white;
+  color: #2e4875;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -101,7 +102,7 @@ h5 {
 }
 
 .intro {
-  background-color: #f8f8f8;
+  background-color: #f0f8ff;
   padding: 60px 100px;
 }
 
@@ -128,9 +129,24 @@ h5 {
   background-color: #f8f8f8;
 }
 
+.cards img {
+  width: 100%;
+}
+
 .card {
   background-color: white;
   margin: 30px 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+.embed {
+  aspect-ratio: 1 / 1;
+  width: 100%;
 }
 
 .card-body {
@@ -138,7 +154,7 @@ h5 {
 }
 
 .card-footer {
-  padding: 20px 0;
+  padding: 0px 30px 30px 30px;
 }
 
 .cards h2,
@@ -148,7 +164,7 @@ h5 {
 }
 
 .button-dark {
-  background-color: blue;
+  background-color: #2e4875;
   color: white;
   display: block;
   font-family: Poppins;
@@ -158,6 +174,7 @@ h5 {
   letter-spacing: 3px;
   padding: 16px 32px;
   margin: 0 auto;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -200,23 +217,46 @@ footer h3 {
     padding: 60px 0;
   }
 
-  section {
+  section,
+  .intro {
     padding: 30px;
   }
 
   h1 {
     font-size: 45px;
+    text-align: center;
   }
 
-  h2 {
-    font-size: 20px;
+  .intro h2,
+  .cards h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .intro h3,
+  .cards h3 {
+    text-align: center;
   }
 
   .grid {
     grid-template-columns: 1fr;
   }
 
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
+
   img {
+    display: block;
+    margin: 0 auto;
     max-width: 100%;
   }
 }
