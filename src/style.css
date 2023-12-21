@@ -72,7 +72,7 @@ h5 {
 
 .button-light {
   background-color: white;
-  color: #2e4875;
+  color: #ff2768;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -108,11 +108,12 @@ h5 {
 
 .intro {
   background-color: #f0f8ff;
-  padding: 60px 100px;
+  padding: 75px 100px;
 }
 
 .intro img {
   max-width: 90%;
+  padding: 8px 0 0 0;
 }
 
 .intro h2,
@@ -187,7 +188,7 @@ h5 {
 }
 
 .button-dark {
-  background-color: #2e4875;
+  background-color: #ff2768;
   color: white;
   display: block;
   font-family: Poppins;
@@ -246,6 +247,20 @@ footer a {
   color: white;
 }
 
+footer a:hover {
+  opacity: 0.7;
+  transition: all 200ms ease-in-out;
+}
+
+.source-link {
+  color: #ff2768;
+}
+
+.source-link:hover {
+  opacity: 0.7;
+  transition: all 200ms ease-in-out;
+}
+
 /* Media Query */
 
 @media (max-width: 960px) {
@@ -263,9 +278,10 @@ footer a {
     text-align: center;
   }
 
+  header h2,
   .intro h2,
   .cards h2 {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -288,6 +304,10 @@ footer a {
 
   .embed {
     aspect-ratio: 16 / 9;
+  }
+
+  .card {
+    margin: 30px 0 0 0;
   }
 
   img {
